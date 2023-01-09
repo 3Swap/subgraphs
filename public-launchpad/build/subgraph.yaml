@@ -6,9 +6,9 @@ dataSources:
     name: PublicTokenSaleCreator
     network: mainnet
     source:
-      address: "0xd7B8175b39BB60B08b343a4358606dAA072c3B0b"
       abi: PublicTokenSaleCreator
-      startBlock: 37859069
+      address: "0x51965D1622fa0F325B2a3c5C6f183362e58840eE"
+      startBlock: 37877365
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -20,28 +20,6 @@ dataSources:
           file: PublicTokenSaleCreator/abis/PublicTokenSaleCreator.json
         - name: ERC20
           file: PublicTokenSaleCreator/abis/ERC20.json
-      eventHandlers:
-        - event: TokenSaleItemCreated(address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,address)
-          handler: handleTokenSaleItemCreated
-      file: PublicTokenSaleCreator/PublicTokenSaleCreator.wasm
-  - kind: ethereum
-    name: PublicTokenSaleCreator01
-    network: mainnet
-    source:
-      address: "0xACf4370fFbe0542525FA5b46515A486833993342"
-      abi: PublicTokenSaleCreator
-      startBlock: 37595931
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.7
-      language: wasm/assemblyscript
-      entities:
-        - Launch
-      abis:
-        - name: PublicTokenSaleCreator
-          file: PublicTokenSaleCreator01/abis/PublicTokenSaleCreator.json
-        - name: ERC20
-          file: PublicTokenSaleCreator01/abis/ERC20.json
       eventHandlers:
         - event: TokenSaleItemCreated(address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,address)
           handler: handleTokenSaleItemCreated

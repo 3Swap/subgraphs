@@ -4,8 +4,8 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --network mainnet --ipfs https://graph.vefinetwork.org/app/ipfs/ --node https://graph.vefinetwork.org/app/polygon/admin/ vefi/public_token_launch",
-    "create-remote": "graph create --node https://graph.vefinetwork.org/app/polygon/admin/ vefi/public_token_launch",
+    "deploy": "graph deploy --network mainnet --ipfs https://graph.vefinetwork.org/app/ipfs/ --node https://graph.vefinetwork.org/app/polygon/admin/ 3swap/public_token_launch",
+    "create-remote": "graph create --node https://graph.vefinetwork.org/app/polygon/admin/ 3swap/public_token_launch",
     "remove-local": "graph remove --node http://localhost:8020/ vefi/public_token_launch",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 vefi/public_token_launch",
     "test": "graph test"
